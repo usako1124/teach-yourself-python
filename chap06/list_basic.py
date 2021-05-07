@@ -1,0 +1,5 @@
+print(list(['x', 'y', 'z']))  # ['x', 'y', 'z']
+print(list(('x', 'y', 'z')))  # ['x', 'y', 'z']
+print(list({'x', 'y', 'z'}))  # ['z', 'x', 'y']
+print(list('xyz'))  # ['x', 'y', 'z']
+print(list())  # []
