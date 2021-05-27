@@ -1,8 +1,8 @@
-data1 = 'グローバル'
+data = 'グローバル'
 
 def check_scope():
-    data2 = 'ローカル'
-    return data1
+    data = 'ローカル'
+    return data
 
-print(check_scope())  # グローバル
-print(data2)  # エラー
+print(check_scope())  # ローカル
+print(data)  # グローバル
