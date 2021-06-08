@@ -5,7 +5,8 @@ import requests
 # 指定の URL にリクエストし、結果を取得
 async def get_content(url):
     print(f'start {url}')
-    res = requests.request('get', url)
+    # res = requests.request('get', url)
+    res = await loop.run_in_executor(None, requests.get, url)
     print(f'end {url}')
     return res.text[:100]
 
