@@ -8,3 +8,7 @@ class Person:
     # インスタンス変数の内容を出力
     def show(self):
         print(f'わたしの名前は{self.lastname}{self.firstname}です！')
+
+if __name__ == '__main__':
+    p = Person('太郎', '山田')
+    p.show()
