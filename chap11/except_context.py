@@ -11,6 +11,7 @@ class MyContext:
             print('**Exit**')
         else:
             print(f'**{value}**')
+            return True
     
     def hoge(self):
         print('Hoge')
