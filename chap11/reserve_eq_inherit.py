@@ -18,6 +18,14 @@ class BusinessPerson(Person):
         # title を追加
         self.title = title
 
+    def __eq__(self, other):
+        if isinstance(other, BusinessPerson):
+            # Person 型の判定に加えて、title も判定
+            return super().__eq__(other) and \
+                self.title == other.title
+        return False
+
+
 if __name__ == '__main__':
     p = Person('太郎', '山田')
     bp = BusinessPerson('太郎', '山田', '部長')
