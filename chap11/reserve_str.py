@@ -4,8 +4,10 @@ class Person:
         self.__lastname = lastname
 
     # インスタンスの文字列表現を生成
-    def __str__(self):
-        return f'{self.lastname} {self.firstname}'
+    # def __str__(self):
+    #     return f'{self.lastname} {self.firstname}'
+    def __repr__(self):
+        return f'Person({self.firstname}, {self.lastname})'
 
     # プロパティを定義
     @property
