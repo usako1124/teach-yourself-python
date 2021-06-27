@@ -1,6 +1,6 @@
 import dataclasses
 
-@dataclasses.dataclass()
+@dataclasses.dataclass(frozen=True)
 class Person:
     firstname: str
     lastname: str
