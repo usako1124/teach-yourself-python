@@ -12,6 +12,9 @@ class PersonList:
     def __init__(self):
         self.data= []
     
+    def __iter__(self):
+        return iter(self.data)
+
     def add(self, person):
         self.data.append(person)
 
@@ -23,5 +26,5 @@ if __name__ == '__main__':
     pl.add(Person('悟助', '田中'))
 
     # PersonList の内容を順に処理し、その show メソッドを実行
-    for p in pl.data:
+    for p in pl:
         p.show()
