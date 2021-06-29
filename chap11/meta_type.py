@@ -19,3 +19,5 @@ Person = type(
 if __name__ == '__main__':
     p = Person('太郎', '山田')
     p.show()
+    print(type(Person))
+    print(isinstance(Person, type))
